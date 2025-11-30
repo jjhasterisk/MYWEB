@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品集 - 个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .portfolio-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+        }
+        
+        .portfolio-image img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .portfolio-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .portfolio-content h3 {
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        
+        .portfolio-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        
+        .portfolio-tags span {
+            background-color: #3498db;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">我的空间</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">关于我</a>
+                </li>
+                <li class="nav-item">
+                    <a href="portfolio.html" class="nav-link active">作品集</a>
+                </li>
+                <li class="nav-item">
+                    <a href="blog.html" class="nav-link">学习笔记</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">联系我</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="portfolio-section">
+            <div class="section-header">
+                <h1>我的作品与证书</h1>
+                <p>展示我的书法作品和音乐证书</p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/calligraphy1.jpg" alt="书法作品">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>书法作品</h3>
+                        <div class="portfolio-tags">
+                            <span>书法</span>
+                            <span>传统艺术</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/hulusi-certificate.jpg" alt="葫芦丝证书">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>葫芦丝十级证书</h3>
+                        <div class="portfolio-tags">
+                            <span>民族乐器</span>
+                            <span>十级</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/calligraphy2.jpg" alt="书法作品">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>书法作品</h3>
+                        <div class="portfolio-tags">
+                            <span>书法</span>
+                            <span>传统艺术</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 鞠佳禾 - 个人网站</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">微博</a>
+                <a href="#">知乎</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
